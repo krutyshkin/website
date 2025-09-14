@@ -1,2 +1,2 @@
 # website
-Мой сайт
+Мой сайт -> vibexdev.xyz
