@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         avatar.addEventListener('click', () => {
             clickCount++;
             clearTimeout(clickTimer);
-            clickTimer = setTimeout(() => { clickCount = 0; }, 1500);
+            clickTimer = setTimeout(() => { clickCount = 0; }, 100000000);
 
             if (clickCount === 7) {
                 clickCount = 0;
@@ -68,4 +68,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
 });
