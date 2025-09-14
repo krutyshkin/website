@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вайб</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="background-video" loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div id="preloader" class="preloader"></div>
+
+    <div id="root" class="hidden">
+        <main id="home-view" class="view active">
+            <div class="avatar-wrapper">
+                <img src="avatar.jpg" alt="Avatar" class="avatar" id="main-avatar">
+            </div>
+            <div class="info">
+                <h1>Привет! Меня зовут <span class="highlight">вайб</span></h1>
+                <p id="age">Тут типо заебись и сайт сделал вайб</p>
+                <p class="bio">Создаю телеграм ботов, очень хороший код. Сижу на лолз и кайфую</p>
+            </div>
+            <div class="links">
+                <div id="projects-btn" class="link-card"><div class="card-icon"><i class='bx bx-code-block'></i></div><div class="card-text"><h3>Проекты</h3><p>Мои текущие и завершенные работы.</p></div></div>
+                <div id="contacts-btn" class="link-card"><div class="card-icon"><i class='bx bx-user-voice'></i></div><div class="card-text"><h3>Контакты</h3><p>Все актуальные способы связи со мной.</p></div></div>
+                <div id="donations-btn" class="link-card"><div class="card-icon"><i class='bx bx-wallet'></i></div><div class="card-text"><h3>Донаты</h3><p>Поддержать меня и мое творчество.</p></div></div>
+            </div>
+        </main>
+
+        <div id="projects-view" class="view">
+            <div class="page-container">
+                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
+                <div class="content-wrapper">
+                    <div class="file-header"><i class='bx bxs-file-json'></i> projects.json</div>
+                    <div class="projects-grid">
+                        <div class="project-card-v2">
+                            <div class="p-card-header"><div class="p-card-title"><h3>Портфолио v2</h3></div></div>
+                            <p class="p-card-description">Данный сайт, Планирую еще обновлять и добавлять функции. Исходный код есть на гитхабе</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright">Copyright © 2025 вайб. Все права защищены.</footer>
+            </div>
+        </div>
+        
+        <div id="contacts-view" class="view">
+             <div class="page-container">
+                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
+                 <div class="content-wrapper">
+                    <div class="file-header"><i class='bx bxs-contact'></i> contacts.json</div>
+                     <div class="projects-grid">
+                        <a href="https://t.me/vaibwright" class="project-card-v2 link">
+                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-telegram p-card-icon'></i><h3>Telegram</h3></div></div>
+                            <p class="p-card-description">Лучший способ связи со мной</p>
+                        </a>
+                        <a href="https://t.me/development" class="project-card-v2 link">
+                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-telegram p-card-icon'></i><h3>Lolz</h3></div></div>
+                            <p class="p-card-description">Лучший способ связи со мной</p>
+                        </a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    
+        <div id="donations-view" class="view">
+             <div class="page-container">
+                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
+                 <div class="content-wrapper">
+                    <div class="file-header"><i class='bx bxs-dollar-circle'></i> donations.json</div>
+                     <div class="projects-grid">
+                        <div class="project-card-v2">
+                            <div class="p-card-header"><div class="p-card-title"><h3>Toncoin (TON)</h3></div></div>
+                            <p class="p-card-description address">UQBnzyFWY6mFNGBZLeP-ApFX68BGp_LVnxJQ16EdOLaNecIF</p>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
